@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Password Checker</title>
+		<link type="text/css" href="css/style.css" rel="stylesheet" />  
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>  
+		<script type="text/javascript" src="js/pass-Check.js"></script>
+		<!--<script type ="text/javascript">
+			jQuery(document).ready(function() {
+				var temp = $('#userInput').val();
+				if(temp == ''){
+					$('#strength').html("Enter Password").removeClass("weak strong stronger strongest").addClass("plain");
+				}
+			});
+			
+			//var temp = $('#userInput').val();
+			//if(temp == ''){
+				//strength.html("Weak!").removeClass("strong stronger strongest").addClass("weak");
+			//}
+		</script>	!-->
+	</head>
+	<body onload='kickStart()'>
+		<div id="wrapper">
+			<h1>Know Your Password's Strength </h1>
+		
+			<div class="bunch">
+				<input type="password" placeholder="Enter a password" id="userInput" />
+				<div id="strength" class="basic">
+					Strength Meter
+				</div>	
+			</div>
+		</div>	
+	</body>
+</html>
